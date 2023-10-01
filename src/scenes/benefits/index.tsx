@@ -6,6 +6,7 @@ import {
   AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import HText from "@/shared/HText";
+import Benefit from "./Benefit";
 
 const benefits: Array<BenefitType> = [
   {
