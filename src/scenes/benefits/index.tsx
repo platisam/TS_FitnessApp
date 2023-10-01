@@ -13,19 +13,19 @@ const benefits: Array<BenefitType> = [
     icon: <HomeModernIcon className="h-6 w-6" />,
     title: "State of the Art Facilities",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, mollitia? Sequi repudiandae veniam odit iure.",
+      "It will provide a state-of-the-art facility that is ideally suited to allowing athletes to meet the new challenges of greater integration with the regular forces.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
     title: "100's of Diverse Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, mollitia? Sequi repudiandae veniam odit iure.",
+      "EVOGYM provides the ultimate gym experience by combining cutting edge techniques with high grade equipment and friendly, supportive staff.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
     title: "Expert and Pro Trainers",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, mollitia? Sequi repudiandae veniam odit iure.",
+      "We are professional trainers with cutting edge approach to delivering quality training.",
   },
 ];
 
