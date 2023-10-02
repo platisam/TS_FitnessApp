@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/24/solid";
 import HText from "@/shared/HText";
 import Benefit from "./Benefit";
+import ActionButton from "@/shared/ActionButton";
 
 const benefits: Array<BenefitType> = [
   {
@@ -84,6 +85,54 @@ const Benefits = ({ setSelectedPage }: Props) => {
             />
           ))}
         </motion.div>
+        {/* GRAPHICS AND DESCRIPTION */}
+        <div>
+          {/* GRAPHIC */}
+          <img src="" alt="" />
+
+          {/* DESCRIPTION */}
+          <div>
+            {/* TITLE */}
+            <div className="relative">
+              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] before:content-abstractwaves">
+                <div>
+                  <HText>
+                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
+                    <span className="text-primary-500">FIT</span>
+                  </HText>
+                </div>
+              </div>
+            </div>
+
+            {/* DESCRIPTION */}
+            <div>
+              <p className="my-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                itaque vitae neque nostrum a aspernatur at, incidunt aperiam
+                magni porro molestias voluptas debitis, libero quas, nihil nemo
+                eaque numquam. Quasi architecto odit placeat officiis sed
+                eveniet, totam earum saepe iusto unde odio fugiat molestias ea
+                qui molestiae quae corporis beatae.
+              </p>
+              <p className="mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias dolore delectus beatae atque minima assumenda
+                molestiae pariatur, laudantium dolores aspernatur voluptatum
+                sunt consequatur necessitatibus omnis quod debitis iste. Natus
+                fuga magni vitae, adipisci quas aut rem laudantium ipsam.
+              </p>
+            </div>
+
+            {/* BUTTON */}
+            <div className="relative mt-16">
+              <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                <ActionButton setSelectedPage={setSelectedPage}>
+                  Join Now
+                </ActionButton>
+              </div>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </section>
   );
