@@ -8,6 +8,45 @@ import image6 from "../../assets/image6.png";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 
+const classes = [
+  {
+    name: "Weight Training Classes",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus.",
+    image: image1,
+  },
+  {
+    name: "Yoga Classes",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus.",
+    image: image2,
+  },
+  {
+    name: "Ab Core Classes",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus.",
+    image: image3,
+  },
+  {
+    name: "Adventure Classes",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus.",
+    image: image4,
+  },
+  {
+    name: "Fitness Classes",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus.",
+    image: image5,
+  },
+  {
+    name: "Training Classes",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus.",
+    image: image6,
+  },
+];
+
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
@@ -40,6 +79,13 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
+        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+          <ul className="w-[2800px] whitespace-nowrap">
+            {classes.map((item, index) => (
+              <Class />
+            ))}
+          </ul>
+        </div>
       </motion.div>
     </section>
   );
