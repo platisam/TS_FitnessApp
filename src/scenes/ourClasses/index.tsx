@@ -1,4 +1,4 @@
-import { SelectedPage } from "@/shared/types";
+import { SelectedPage, ClassType } from "@/shared/types";
 import image1 from "../../assets/image1.png";
 import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
@@ -8,7 +8,7 @@ import image6 from "../../assets/image6.png";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 
-const classes = [
+const classes: Array<ClassType> = [
   {
     name: "Weight Training Classes",
     description:
@@ -17,8 +17,6 @@ const classes = [
   },
   {
     name: "Yoga Classes",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus.",
     image: image2,
   },
   {
@@ -35,8 +33,6 @@ const classes = [
   },
   {
     name: "Fitness Classes",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, possimus.",
     image: image5,
   },
   {
